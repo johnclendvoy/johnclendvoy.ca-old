@@ -1,0 +1,12 @@
+<svg>
+  <polygon points="0,0 40,0 50,22.36 40,44.72 0,44.72 10,22.36"
+  style="fill:#2d4244;stroke-width:0;" />
+  <g transform="translate(60,0)"> 
+  <polygon points="0,0 60,0 70,22.36 60,44.72 0,44.72 10,22.36"
+  style="fill:#2d4244;stroke-width:0;" />
+  </g>
+  <g transform="translate(140,0)"> 
+    <polygon points="0,0 40,0 50,22.36 40,44.72 0,44.72 10,22.36"
+  style="fill:#2d4244;stroke-width:0;" />
+  </g>
+</svg>
