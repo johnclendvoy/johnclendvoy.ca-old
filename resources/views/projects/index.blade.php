@@ -30,7 +30,7 @@
 							<h2>{{ $project->name }}</h2>
 
 							@if($project->design && !empty($project->slug))
-							<div><a target="_blank" href="{{$project->link}}">{{$project->slug}}</a></div>
+							<div><a target="_blank" href="{{$project->url}}">{{$project->slug}}</a></div>
 							@endif
 
 							@if($project->design && ($project->xs_screen || $project->sm_screen || $project->md_screen || $project->lg_screen) )
