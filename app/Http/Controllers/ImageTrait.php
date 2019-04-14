@@ -88,7 +88,7 @@ trait ImageTrait {
         }
         else
         {
-            $filename = date("Y-m-d-H-i-s_") . str_replace(' ', '-', $file->getClientOriginalName());
+            $filename = date("Y-m-d-H-i-s_") . Str::replace(' ', '-', $file->getClientOriginalName());
         }
 
         ini_set("gd.jpeg_ignore_warning", 1);

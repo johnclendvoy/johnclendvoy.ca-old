@@ -64,7 +64,7 @@ class ProjectController extends Controller
 	{
 		if(empty($request->slug))
 		{
-			array_set($request, 'slug', '');
+			Arr:set($request, 'slug', '');
 		}
 
 		$project = Project::create($request->all());
@@ -95,7 +95,7 @@ class ProjectController extends Controller
 	{
 		if(empty($request->slug))
 		{
-			array_set($request, 'slug', '');
+			Arr::set($request, 'slug', '');
 		}
 
 		$project->update($request->all());

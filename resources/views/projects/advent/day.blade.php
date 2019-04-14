@@ -16,7 +16,7 @@
 					@if($day->daysRemaining == 0)
 					<h2 class="text-white">Last Day!</h2>
 					@else
-					<h2 class="text-white">{{ $day->daysRemaining }} {{ str_plural('day', $day->daysRemaining ) }} to go!</h2>
+					<h2 class="text-white">{{ $day->daysRemaining }} {{ Str::plural('day', $day->daysRemaining ) }} to go!</h2>
 					@endif
 				</div>
 				

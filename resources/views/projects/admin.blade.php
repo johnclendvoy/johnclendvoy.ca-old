@@ -29,7 +29,7 @@
 							<td>{{ $project->sort_order}}</td>
 							<td><img alt="thumbnail" src="{{$project->image('thumbnail_small')}}" ></td>
 							<td>{{ $project->name }}</td>
-							<td>{{ str_limit($project->description, 40) }}</td>
+							<td>{{ Str::limit($project->description, 40) }}</td>
 							<td>{{ $project->url }}</td>
 							<td>{{ $project->button_text }}</td>
 							<td>
