@@ -14,7 +14,7 @@ class EmailController extends Controller
 	public function sendContactEmail(ContactFormRequest $request) {
 
 		//save the message in the db
-		ContactMessage::create($request->all());
+		// ContactMessage::create($request->all());
 
 		// send me the email
 		Mail::to('johnclendvoy@gmail.com')->send( new ContactForm($request->all()));
