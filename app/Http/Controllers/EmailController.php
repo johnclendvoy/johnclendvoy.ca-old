@@ -19,8 +19,14 @@ class EmailController extends Controller
 		// send me the email
 		Mail::to('johnclendvoy@gmail.com')->send( new ContactForm($request->all()));
 
+		$links = [
+			['site'=>'github', 'url'=>'http://github.com/johnclendvoy'],
+			['site'=>'twitter', 'url'=>'http://twitter.com/johnclendvoy'],
+			['site'=>'linkedin', 'url'=>'https://linkedin.com/in/johnclendvoy'],
+		];
+
 		$sent = true;
-		return view('pages.contact', compact('sent'));
+		return view('pages.contact', compact('sent', 'links'));
 	}
 
 	// List of all leather items
