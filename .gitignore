@@ -18,3 +18,4 @@ Homestead.json
 /public/uploads/images/projects/thumbnail_small/*
 
 !**/.gitkeep
+**/.DS_Store
