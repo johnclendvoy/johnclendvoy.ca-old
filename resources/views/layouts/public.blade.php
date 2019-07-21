@@ -16,7 +16,7 @@
 
 				{{-- title bar, not on home page --}}
 				@if(empty($hide_title))
-				    @component('components.titlebar', compact('links'))
+				    @component('components.titlebar', ['links' => $links ?? []])
 				        @slot('title')
 				            @yield('title')
 				        @endslot
