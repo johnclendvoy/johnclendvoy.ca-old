@@ -22,7 +22,7 @@
 
 				<div class="m-t-30">
 					<div class="col-xs-10 col-xs-push-1 col-md-3 col-sm-6 col-sm-push-0">
-						<a target="_blank" href="{{ $project->url }}" title="{{ $project->name }}">
+						<a href="{{ $project->url }}" title="{{ $project->name }}">
 							<img class="img img-responsive" src="{{ $project->image('feature') }}" alt="{{ $project->name}}" title="{{ $project->name }}">
 						</a>
 					</div>
@@ -32,7 +32,7 @@
 							<h2>{{ $project->name }}</h2>
 
 							@if($project->design && !empty($project->slug))
-							<div><a target="_blank" href="{{$project->url}}">{{$project->slug}}</a></div>
+							<div><a target="_blank" href="{{$project->url}}"><i class="fa fa-external-link"></i> {{$project->slug}}</a></div>
 							@endif
 
 {{-- 							@if($project->design && ($project->xs_screen || $project->sm_screen || $project->md_screen || $project->lg_screen) )
