@@ -1,7 +1,7 @@
 @extends('layouts.tailwind')
 
 @section('content')
-<body class="bg-black">
+<body class="bg-grey-lightst">
 
 	<header class="flex justify-between items-center bg-white px-16 mb-8 border-t-4 border-green">
 
