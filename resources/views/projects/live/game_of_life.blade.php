@@ -1,5 +1,5 @@
 @extends('layouts.public')
-@section('title', "Conway's Game of Life")
+@section('title', "Conway\'s Game of Life")
 
 @section('content')
 
@@ -44,11 +44,11 @@
 				</ul>
 
 				<h3>Learn More</h3>
-					<ul>
-						<li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Wikipedia</a></li>
-						<li><a href="http://conwaylife.com" target="_blank">A site dedicated to the Game of life.</a></li>
-						<li><a href="https://www.reddit.com/r/cellular_automata/" target="_blank">/r/cellular_automata/ on Reddit</a></li>
-					</ul>
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Wikipedia</a></li>
+					<li><a href="http://conwaylife.com" target="_blank">A site dedicated to the Game of life.</a></li>
+					<li><a href="https://www.reddit.com/r/cellular_automata/" target="_blank">/r/cellular_automata/ on Reddit</a></li>
+				</ul>
 			</div>
 
 		</div>
