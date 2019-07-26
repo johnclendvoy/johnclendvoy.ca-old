@@ -1,14 +1,14 @@
 @extends('layouts.public')
-@section('title', "Conway\'s Game of Life")
+@section('title')
+Conway's Game of Life
+@endsection
 
 @section('content')
 
 	<div class="container">
 
 		<div class="row text-center">
-
 			<div id="game-of-life-div"></div>
-
 		</div>
 
 		<div class="row text-left">
