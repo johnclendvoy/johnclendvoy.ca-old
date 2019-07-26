@@ -23,8 +23,7 @@ Auth::routes();
 	Route::get('/home', 'PageController@home');
 	Route::get('/contact', 'PageController@contact');
 	Route::post('/contact', 'EmailController@sendContactEmail');
-	Route::get('/music', 'PageController@music');
-	Route::get('/codezillla', 'PageController@music');
+	Route::get('/art', 'PageController@art');
 	Route::get('/admin', 'PageController@dashboard');
 
 	// TABLES
@@ -34,10 +33,11 @@ Auth::routes();
 	Route::resource('messages', 'MessageController');
 
 	// Projects
-	Route::group(['prefix' => 'projects'], function () {
+	Route::group(['prefix' => 'software'], function () {
 		Route::get('/admin', 'ProjectController@admin');
 	});
 	Route::resource('projects', 'ProjectController');
+	Route::get('/software', 'ProjectController@index');
 
 	// Project Routes
 	/////////////////
@@ -71,8 +71,8 @@ Auth::routes();
 	Route::get('/icons', 'IconController@index');
 
 	// Designs
-	Route::group(['prefix' => 'designs'], function(){
-		Route::get('/', 'DesignController@index')->name('designs');
+	Route::group(['prefix' => 'design'], function(){
+		Route::get('/', 'DesignController@index')->name('design');
 		Route::get('/timetracker', 'DesignController@timetracker')->name('timetracker');
 		Route::get('/listings1', 'DesignController@listings1')->name('listings1');
 		Route::get('/home1', 'DesignController@home1')->name('home1');

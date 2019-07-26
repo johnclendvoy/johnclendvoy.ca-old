@@ -19,36 +19,28 @@ class PageController extends Controller
 		$sections = [
 			[
 				'title' => 'Software',
-				'link' => '/projects',
+				'link' => '/software',
 				'image' => '/images/home/procedural_mountains.png',
 				'image_alt' => 'Screenshot of Procedural Mountains',
-				'description' => 'I\'ve used many different technologies and programming languages to develop games, software tools and other experiments.',
-				'button_text' => 'View Projects'
+				'description' => 'I\'ve used many different technologies to develop games, software tools and other experiments.',
+				'button_text' => 'View Software'
 			],
 			[
-				'title' => 'Designs',
-				'link' => '/designs',
+				'title' => 'Web Design',
+				'link' => '/design',
 				'image' => '/images/home/tech_company.png',
 				'image_alt' => 'Tech company homepage designed in tailwind',
 				'description' => 'I practice my design skills by making interfaces for websites and web apps with CSS, HTML5, and <a href="http://tailwindcss.com" target="_blank">Tailwind</a>.',
 				'button_text' => 'View Designs'
 			],
 			[
-				'title' => 'Music/Videos',
-				'link' => '/music',
+				'title' => 'Digital Art',
+				'link' => '/art',
 				'image' => '/images/home/codezillla_small.jpg',
 				'image_alt' => 'Codezillla logo',
 				'description' => 'I produce music on my computer as well as program visuals for music videos using <a href="http://processing.org" target="_blank">Processing.</a>',
 				'button_text' => 'Watch/Listen'
 			],
-			// [
-			// 	'title' => 'Leather',
-			// 	'link' => 'http://johntheleatherman.com',
-			// 	'image' => '/images/home/wallet_small.jpg',
-			// 	'image_alt' => 'Photo of a handmade wallet',
-			// 	'description' => 'In my spare time like to make things like wallets from leather. I have built a website to showcase my creations.',
-			// 	'button_text' => 'Visit JohnTheLeatherman.com'
-			// ],
 		];
 		return view('pages.home', compact('sections'));
 	}
@@ -62,9 +54,8 @@ class PageController extends Controller
 		return view('pages.dashboard', compact('objects'));
 	}
 
-	public function music() 
+	public function art() 
 	{
-		// info that belongs in the title jumbotron
 		$links = [
 			['site'=>'soundcloud', 'url'=>'http://soundcloud.com/codezillla'],
 			['site'=>'facebook', 'url'=>'http://facebook.com/codezilllla'],
@@ -72,7 +63,6 @@ class PageController extends Controller
 			['site'=>'youtube-play', 'url'=>'https://www.youtube.com/channel/UCyCkHYh4wEWGcuXDD-fUBeQ'],
 			['site'=>'spotify', 'url'=>'https://open.spotify.com/artist/1QKmiA5eescjubPxeRwk1A'],
 		];
-
 		$youtubeCodes = [
 			'qpeyMdG26WI',
 			'NGtWvhGacao',
@@ -82,7 +72,6 @@ class PageController extends Controller
 			'KHqcFudRR4U',
 			'BrhSQzrrcz4'
 		];
-
 		return view('pages.music', compact('youtubeCodes', 'links'));
 	}
 
@@ -93,9 +82,7 @@ class PageController extends Controller
 			['site'=>'twitter', 'url'=>'http://twitter.com/johnclendvoy'],
 			['site'=>'linkedin', 'url'=>'https://linkedin.com/in/johnclendvoy'],
 		];
-
 		$sent = false;
 		return view('pages.contact', compact('sent', 'links'));
 	}
-	
 }

@@ -14,12 +14,12 @@ class DesignController extends Controller
 	];
 
 	public $description =
-		'<p>If I ever want to test out an idea for a design, or mock up an interface for a web application, I have been turning to <a href="//tailwindcss.com">Tailwind</a> to quickly make prototypes.  The Tailwind designs use Flexbox for layout, otherwise I usually use <a href="//getbootstrap.com">Bootstrap</a> as a starting point. All of these designs are coded from scratch and are my own work. They may not be fully optimized for all for all screen sizes yet; see the icons below the title to see how responsive they are.</p>';
+		'<p>The following is a sample of some of the custom web design work that I have done. All of these sites or pages were designed and coded by me from scratch. Keep in mind some of these links lead to prototypes that may not be fully optimized for all for all screen sizes.</p>';
 
 	// List of all leather items
 	public function index()
 	{
-		$title = 'Front-End Designs';
+		$title = 'Web Design';
 		$links = $this->social;
 		$description = $this->description;
 
@@ -32,10 +32,12 @@ class DesignController extends Controller
 	{
 		return view('wip.home1');
 	}
+
 	public function timetracker()
 	{
 		return view('wip.timetracker');
 	}
+
 	public function listings1()
 	{
 		return view('wip.listings1');

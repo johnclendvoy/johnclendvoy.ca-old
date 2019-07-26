@@ -50,14 +50,14 @@
 					<div class="form-group">
 						<div class="input-group input-group-lg">
 							<label for="count-input" class="input-group-addon">Paragraphs</label>
-						  	<input id="count-input" type="number" name="count" min="1" max="1000" class="text-right form-control" placeholder="Paragraphs" value="{{old('count', $count)}}">
+						  	<input id="count-input" type="number" name="count" min="1" max="1000" class="text-right form-control square" placeholder="Paragraphs" value="{{old('count', $count)}}">
 						</div> <!-- input group -->
 					</div><!-- form group -->
 
 					<div class="form-group">
 						<div class="input-group input-group-lg">
 							<label for="length-input" class="input-group-addon">Words per Paragraph *</label>
-						  	<input id="length-input" type="number" name="length" min="1" max="1000" class="text-right form-control" placeholder="Paragraph Length" value="{{old('length', $length)}}">
+						  	<input id="length-input" type="number" name="length" min="1" max="1000" class="text-right form-control square" placeholder="Paragraph Length" value="{{old('length', $length)}}">
 						</div> <!-- input group -->
 					</div><!-- form group -->
 

@@ -1,6 +1,7 @@
 
 :root {
 	--white: #fbfffd;
+	--lt-grey: #f6faf8;
 	--black: #14191b;
 	--lt-green: #e2fdac;
 	--lt-blue: #8fd5d3;
@@ -108,7 +109,7 @@ span.social a{
 
 .btn {
 	font-size:16px;
-	padding:11px;
+	padding:12px 18px;
 	border-radius: 0px;
 	border: none;
 	margin-right: 6px;
@@ -148,20 +149,16 @@ span.social a{
 	margin-right: 0px;	
 }
 
-input.text-right.form-control {
-	border-radius:0px;
-}
-
-.input-group .input-group-addon {
-	border-radius:0px;
-}
-
-
 .navbar {
 	margin-bottom: 0px;
 	background: var(--white);
 	border: none;
 	border-radius: 0px;
+}
+
+.nav li a {
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 .navbar-default .navbar-brand {
@@ -263,21 +260,11 @@ a.social-link:hover {
 
 
 /*Form inputs*/
-input.rect {
-	padding:11px;
+
+.square {
 	border-radius: 0px;
-	border: none;
-	background-color: var(--lt-green);
+	background-color: var(--lt-grey);
 }
-
-textarea.rect {
-	padding:11px;
-	border-radius: 0px;
-	border: none;
-	background-color: var(--lt-green);
-}
-
-
 
 /*extra margins*/
 

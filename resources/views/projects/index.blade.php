@@ -1,6 +1,8 @@
 @extends('layouts.public')
 
-@section('title', $title)
+@section('title')
+	{{ $title }}
+@endsection
 
 @section('content')
 
@@ -33,7 +35,7 @@
 							<div><a target="_blank" href="{{$project->url}}">{{$project->slug}}</a></div>
 							@endif
 
-							@if($project->design && ($project->xs_screen || $project->sm_screen || $project->md_screen || $project->lg_screen) )
+{{-- 							@if($project->design && ($project->xs_screen || $project->sm_screen || $project->md_screen || $project->lg_screen) )
 							<span class="text-muted h5">
 								Optimized for:
 							</span>
@@ -41,9 +43,9 @@
 								{!! $project->responsive_icons !!}
 							</span>
 							@endif
-
+ --}}
 							<p>{!! $project->description !!}</p>
-							<a class="btn btn-default" target="_blank" href="{{ !empty($project->url) ? $project->url : '/projects/view/'.$project->slug }}">{{ $project->button_text }}</a>
+							<a class="btn btn-default" href="{{ !empty($project->url) ? $project->url : '/projects/view/'.$project->slug }}">{{ $project->button_text }}</a>
 						</div>
 					</div>
 				</div>

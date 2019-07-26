@@ -29,6 +29,9 @@ class ContactForm extends Mailable
      */
     public function build()
     {
-        return $this->from('johnclendvoy@gmail.com')->replyTo($this->data['email'])->subject('Contact Form Message')->view('emails.contact');
+        return $this->from('johnclendvoy@gmail.com')
+            ->replyTo($this->data['email'])
+            ->subject('Contact Form Message')
+            ->view('emails.contact');
     }
 }
