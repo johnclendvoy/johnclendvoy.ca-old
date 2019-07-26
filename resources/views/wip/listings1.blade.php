@@ -79,7 +79,7 @@
 							<div class="mb-6">
 								<h4 class="uppercase tracking-wide mb-2 text-grey-dark font-thin">Includes</h4>
 								@php
-								$includes = ['Updated Furnace', 'Two Car Garage', 'Pool'];
+								$includes = ['Fence', 'Heated Garage', 'Pool'];
 								@endphp
 								@foreach($includes as $include)
 								<div class="mb-1 text-grey-darker font-thin"><i class="text-grey-dark fa fa-check"></i> {{$include}}</div>
