@@ -1,12 +1,12 @@
 @extends('layouts.tailwind')
 
 @section('content')
-<body class="bg-grey-lightst">
+<body class="bg-grey-lighter">
 
 	<header class="flex justify-between items-center bg-white px-16 mb-8 border-t-4 border-green">
 
 		<div class="">
-			<a class="text-green-dark tracking-tight" href="/designs"><h1>HelloWorld<sup>&reg;</sup></h1></a>
+			<a class="text-green-dark tracking-tight" href="/designs"><h1>FakeListings<sup>&reg;</sup></h1></a>
 		</div>
 
 		<div class="flex h-16 items-center">
@@ -79,7 +79,7 @@
 							<div class="mb-6">
 								<h4 class="uppercase tracking-wide mb-2 text-grey-dark font-thin">Includes</h4>
 								@php
-								$includes = ['Antiques', 'Clothes', 'Sink'];
+								$includes = ['Updated Furnace', 'Two Car Garage', 'Pool'];
 								@endphp
 								@foreach($includes as $include)
 								<div class="mb-1 text-grey-darker font-thin"><i class="text-grey-dark fa fa-check"></i> {{$include}}</div>
