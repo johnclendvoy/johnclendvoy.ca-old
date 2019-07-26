@@ -25,7 +25,7 @@ Auth::routes();
 	Route::post('/contact', 'EmailController@sendContactEmail');
 	Route::get('/art', 'PageController@art');
 	Route::get('/admin', 'PageController@dashboard');
-
+	Route::get('/software', 'ProjectController@index');
 	// TABLES
 
 	// Messages
@@ -33,11 +33,11 @@ Auth::routes();
 	Route::resource('messages', 'MessageController');
 
 	// Projects
-	Route::group(['prefix' => 'software'], function () {
+	Route::group(['prefix' => 'projects'], function () {
 		Route::get('/admin', 'ProjectController@admin');
 	});
+	// Route::get('/software', 'ProjectController@index');
 	Route::resource('projects', 'ProjectController');
-	Route::get('/software', 'ProjectController@index');
 
 	// Project Routes
 	/////////////////
