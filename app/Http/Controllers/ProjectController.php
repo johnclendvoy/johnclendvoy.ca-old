@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Arr;
 use App\Photo;
 use App\Project;
 use App\Category;
