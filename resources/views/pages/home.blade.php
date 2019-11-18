@@ -15,10 +15,12 @@
 		<div class="row">
 
 			@foreach($sections as $section)
-				<div class="col-xs-10 col-xs-push-1 col-md-4 col-md-push-0 col-sm-6 {{$loop->last ? 'col-sm-push-3' : 'col-sm-push-0' }} m-b-30">
+				<div class="col-xs-10 col-xs-push-1 col-md-4 col-md-push-0 col-sm-6 {{$loop->last ? 'col-sm-push-3' : 'col-sm-push-0' }} m-b-90">
+					<div class="text-center">
 					<a href="{{$section['link']}}">
-						<img class="img img-responsive" src="{{$section['image']}}" alt="{{$section['image_alt']}}" title="{{$section['image_alt']}}">
+						<img class="m-x-auto max-height-200 img img-responsive" src="{{$section['image']}}" alt="{{$section['image_alt']}}" title="{{$section['image_alt']}}">
 					</a>
+					</div>
 					<div class="text-center">
 						<h2>{{strtoupper($section['title'])}}</h2>
 						<p>{!! $section['description'] !!}</p>

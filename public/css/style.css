@@ -259,6 +259,23 @@ a.social-link:hover {
 }
 
 
+.project-image {
+	margin-bottom: 0px;
+}
+.project-description {
+	margin-bottom: 90px;
+}
+@media only screen and (max-width: 768px) {
+	.project-image {
+		margin-bottom: 90px;
+	}
+	.project-description {
+		margin-bottom: 0px;
+	}
+}
+
+
+
 /*Form inputs*/
 
 .square {
@@ -280,9 +297,18 @@ a.social-link:hover {
 	margin-bottom: 30px;
 }
 
+.m-b-90 {
+	margin-bottom: 90px;
+}
 
+.m-x-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
 
-
+.max-height-200 {
+	max-height: 200px;
+}
 
 /* Custom for Slick Slider */
 
