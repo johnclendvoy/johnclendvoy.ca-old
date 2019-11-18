@@ -259,21 +259,9 @@ a.social-link:hover {
 }
 
 
-.project-image {
-	margin-bottom: 0px;
-}
 .project-description {
 	margin-bottom: 90px;
 }
-@media only screen and (max-width: 768px) {
-	.project-image {
-		margin-bottom: 90px;
-	}
-	.project-description {
-		margin-bottom: 0px;
-	}
-}
-
 
 
 /*Form inputs*/
