@@ -1,7 +1,7 @@
 @extends('layouts.tailwind')
 
 @section('content')
-<body class="bg-grey-lighter">
+<body class="bg-grey-light">
 
 	<header class="flex justify-between items-center bg-white px-16 mb-8 border-t-4 border-green">
 
@@ -10,7 +10,7 @@
 		</div>
 
 		<div class="flex h-16 items-center">
-			<div>
+			<div class="hidden md:block">
 				@php
 				$links = ['Today', 'Tomorrow', 'All'];
 				@endphp
@@ -19,8 +19,8 @@
 				@endforeach
 			</div>
 
-			<div class="ml-6">
-				<a href="" class=" text-black"><i class="fa fa-user"></i></a>
+			<div class="ml-6 text-center">
+				<a href="" class="bg-green pt-1 rounded-full text-white h-6 w-6 block"><i class="fa fa-user"></i></a>
 			</div>
 
 		</div>
