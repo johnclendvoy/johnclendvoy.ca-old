@@ -10,7 +10,7 @@
 
 		@if(!empty($description))
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 m-b-30">
 				{!! $description !!}
 			</div>
 		</div>
