@@ -14,7 +14,7 @@ class DesignController extends Controller
 	];
 
 	public $description =
-		'<p>The following is a sample of some of the custom web design work that I have done. All of these sites or pages were designed and developed by me front scratch.</p>';
+		'<p>The following is a sample of some of the custom web design work that I have done. All of these sites or pages were designed and developed by me from scratch.</p>';
 
 	// List of all leather items
 	public function index()
