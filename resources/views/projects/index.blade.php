@@ -41,6 +41,12 @@
 
 				</div>
 			</div>
+
+			<div class="clearfix visible-sm visible-xs"></div>
+			@if($loop->iteration % 2 == 0)
+				<div class="clearfix visible-md visible-lg"></div>
+			@endif
+
 			@empty
 				<p>No items available</p>
 			@endforelse
