@@ -20,34 +20,29 @@
 
 			@forelse($projects as $project)
 
-				<div class="m-t-30">
-					<div class="col-xs-10 col-xs-push-1 col-md-3 col-sm-6 col-sm-push-0 project-image">
+			<div class="col-xs-10 col-xs-push-1 col-md-6 col-sm-12 col-sm-push-0 project-image">
+				<div class="row m-b-90">
+					<div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
 						<a href="{{ $project->url }}" title="{{ $project->name }}">
 							<img class="img img-responsive" src="{{ $project->image('feature') }}" alt="{{ $project->name}}" title="{{ $project->name }}">
 						</a>
 					</div>
 
-					<div class="col-xs-10 col-xs-push-1 col-md-3 col-sm-6 col-sm-push-0 project-description">
-						<div class="text-left">
-							<h2>{{ $project->name }}</h2>
+					<div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
+						<h2>{{ $project->name }}</h2>
 
-							@if($project->design && !empty($project->slug))
-							<div><a target="_blank" href="{{$project->url}}"><i class="fa fa-external-link"></i> {{$project->slug}}</a></div>
-							@endif
+						@if($project->design && !empty($project->slug))
+						<div><a target="_blank" href="{{$project->url}}"><i class="fa fa-external-link"></i> {{$project->slug}}</a></div>
+						@endif
 
-							<p>{!! $project->description !!}</p>
-							<a class="btn btn-default" href="{{ !empty($project->url) ? $project->url : '/projects/view/'.$project->slug }}">{{ $project->button_text }}</a>
-						</div>
+						<p>{!! $project->description !!}</p>
+						<a class="btn btn-default" href="{{ !empty($project->url) ? $project->url : '/projects/view/'.$project->slug }}">{{ $project->button_text }}</a>
 					</div>
+
 				</div>
-
-				<div class="clearfix visible-sm visible-xs"></div>
-
-				@if($loop->iteration % 2 == 0)
-				<div class="clearfix visible-md visible-lg"></div>
-				@endif
+			</div>
 			@empty
-				<p>No Items available</p>
+				<p>No items available</p>
 			@endforelse
 		</div>
 
