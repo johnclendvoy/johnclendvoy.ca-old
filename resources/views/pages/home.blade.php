@@ -15,10 +15,10 @@
 
 			@foreach($sections as $section)
 					<div class="row m-b-90">
-						<div class="col-xs-12 col-sm-4 col-md-5">
+						<div class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-4 col-md-5 m-b-20">
 							<img class="m-x-auto max-height-200 img img-responsive" src="{{$section['image']}}" alt="{{$section['image_alt']}}" title="{{$section['image_alt']}}">
 						</div>
-						<div class="col-xs-12 col-sm-8 col-md-7">
+						<div class="col-xs-10 col-xs-push-1 col-sm-push-0 col-sm-8 col-md-7">
 							<h2 class="m-t-0">{{$section['title']}}</h2>
 							<p class="m-b-20">{!! $section['description'] !!}</p>
 							<a class="btn btn-default" href="{{$section['link']}}">{{$section['button_text']}}</a>

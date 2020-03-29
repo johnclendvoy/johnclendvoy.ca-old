@@ -23,7 +23,7 @@
 
 			<div class="col-xs-10 col-xs-push-1 col-md-6 col-sm-12 col-sm-push-0 project-image">
 				<div class="row m-b-90">
-					<div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
+					<div class="col-xs-12 col-sm-4 col-md-5 col-lg-4 m-b-20">
 						<a href="{{ $project->url }}" title="{{ $project->name }}">
 							<img class="img img-responsive" src="{{ $project->image('feature') }}" alt="{{ $project->name}}" title="{{ $project->name }}">
 						</a>
