@@ -13,10 +13,10 @@
 
 							<div class="col-sm-12 form-group text-center">
 								@if($sent)
-									<h3>Thanks for the message</h3>
+									<h2>Thanks for the message</h2>
 									<p> I'll get back to you as soon as I can.</p>
 								@else
-									<h3>Let me know what you think.</h3>
+									<h2>Let me know what you think.</h2>
 									<p>If you have questions, comments, or want to work togther to build awesome software, let me know!</p>
 								@endif
 							</div>
@@ -57,6 +57,32 @@
 				</div>
 
 			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>Find Me Online</h2>
+				<p>I have accounts set up on many websites around the web at which you can follow me and posts about my work.</p>
+
+				<div>
+					<a href="https://linkedin.com/in/johnclendvoy">
+						<i class="fa fa-github"></i> Github
+					</a>
+				</div>
+
+				<div>
+					<a href="https://twitter.com/johnclendvoy">
+						<i class="fa fa-twitter"></i> Twitter
+					</a>
+				</div>
+
+				<div>
+					<a href="https://linkedin.com/in/johnclendvoy">
+						<i class="fa fa-linkedin"></i> LinkedIn
+					</a>
+				</div>
+
+			</div>
+
 		</div>
 	</div>
 @stop

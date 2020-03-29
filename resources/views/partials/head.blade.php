@@ -20,6 +20,7 @@
 		
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Heebo|Roboto:900|Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo|Roboto:900|Caveat" rel="stylesheet">
 
 	<!-- bootstrap -->
  	<link href="/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">

@@ -46,11 +46,6 @@ Auth::routes();
 	Route::get('/game-of-life', 'ProjectController@gameOfLife');
 	Route::get('/procedural-mountains', 'ProjectController@proceduralMountains');
 
-	// Honest Lipsum
-	Route::get('/honestipsum', 'HonestIpsumController@generate');
-	Route::post('/honestipsum', 'HonestIpsumController@generate');
-	Route::get('/honestipsum/api', 'HonestIpsumController@api');
-
 	// lendovi font
 	Route::get('/lendovi/{word?}', 'LendoviController@index');
 
@@ -70,12 +65,12 @@ Auth::routes();
 	// Icons
 	Route::get('/icons', 'IconController@index');
 
-	// Designs
-	Route::group(['prefix' => 'design'], function(){
-		Route::get('/', 'DesignController@index')->name('design');
-		Route::get('/timetracker', 'DesignController@timetracker')->name('timetracker');
-		Route::get('/listings1', 'DesignController@listings1')->name('listings1');
-		Route::get('/home1', 'DesignController@home1')->name('home1');
+	// Websites
+	Route::group(['prefix' => 'website-development'], function(){
+		Route::get('/', 'WebsiteController@index')->name('design');
+		// Route::get('/timetracker', 'WebsiteController@timetracker')->name('timetracker');
+		// Route::get('/listings1', 'WebsiteController@listings1')->name('listings1');
+		// Route::get('/home1', 'DesignController@home1')->name('home1');
 	});
 
 	// WIP

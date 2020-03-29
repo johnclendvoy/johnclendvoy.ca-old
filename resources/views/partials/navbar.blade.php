@@ -19,10 +19,10 @@
 				@if(Auth::check())
 				<li><a class="{{setActive('admin')}}" href="/admin">Admin</a></li>
 				@endif
-				<li><a class="{{setActive('software')}}" href="/software">Software</a></li>
 				@if(App\Project::where('design', 1)->get()->count())
-				<li><a class="{{setActive('design')}}" href="/design">Web Design</a></li>
+				<li><a class="{{setActive('design')}}" href="/website-development">Website Development</a></li>
 				@endif
+				<li><a class="{{setActive('software')}}" href="/software">Software</a></li>
 				<li><a class="{{setActive('art')}}" href="/art">Digital Art</a></li>
 				<li><a class="{{setActive('contact')}}" href="/contact">Contact</a></li>
 			</ul>

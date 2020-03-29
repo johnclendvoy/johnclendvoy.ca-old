@@ -18,6 +18,15 @@ class PageController extends Controller
 	{
 		$sections = [
 			[
+				'title' => 'Website Development',
+				'link' => '/website-development',
+				// 'image' => '/images/home/tech_company.png',
+				'image' => '/svg/undraw_experience_design.svg',
+				'image_alt' => 'Website Development',
+				'description' => 'I help people build their online prescence by designing, developing and hosting websites and web apps with <a href="https://laravel.com" target="_blank">Laravel</a>, and <a href="http://tailwindcss.com" target="_blank">Tailwind</a>.',
+				'button_text' => 'Learn More'
+			],
+			[
 				'title' => 'Software',
 				'link' => '/software',
 				// 'image' => '/images/home/procedural_mountains.png',
@@ -27,21 +36,12 @@ class PageController extends Controller
 				'button_text' => 'View Software'
 			],
 			[
-				'title' => 'Web Design',
-				'link' => '/design',
-				// 'image' => '/images/home/tech_company.png',
-				'image' => '/svg/undraw_experience_design.svg',
-				'image_alt' => 'Web Design',
-				'description' => 'I practice my design skills by making interfaces for websites and web apps with CSS, HTML5, and <a href="http://tailwindcss.com" target="_blank">Tailwind</a>.',
-				'button_text' => 'View Designs'
-			],
-			[
 				'title' => 'Digital Art',
 				'link' => '/art',
 				// 'image' => '/images/home/codezillla_small.jpg',
 				'image' => '/svg/undraw_art.svg',
 				'image_alt' => 'Codezillla logo',
-				'description' => 'I produce music on my computer as well as program visuals for music videos using <a href="http://processing.org" target="_blank">Processing.</a>',
+				'description' => 'I produce electronic music as well as create visuals for music videos using <a href="http://processing.org" target="_blank">Processing.</a>',
 				'button_text' => 'Watch/Listen'
 			],
 		];

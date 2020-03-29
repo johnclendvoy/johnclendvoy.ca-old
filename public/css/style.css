@@ -1,13 +1,14 @@
 
 :root {
 	--white: #fbfffd;
-	--lt-grey: #f6faf8;
+	--lt-grey: #f0f4f2;
+	--md-grey: #666f73;
+
 	--black: #14191b;
 	--lt-green: #e2fdac;
 	--lt-blue: #8fd5d3;
 	--md-blue: #68acaa;
 	--dk-blue: #2d4244;
-	--md-grey: #666f73;
 }
 
 a {
@@ -17,6 +18,10 @@ a:hover {
 	color: var(--dk-blue);
 }
 
+p {
+	margin-bottom: 45px;
+	line-height: 1.4em;
+}
 
 html, body {
 	/*font-family: 'Quicksand', sans-serif;*/
@@ -34,7 +39,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .script {
-	font-family: 'Lobster', sans-serif;
+	font-family: 'Caveat', sans-serif;
 }
 
 pre {
@@ -65,9 +70,12 @@ a.logo {
 	color: var(--lt-blue);
 	font-size:16px;
 }
+.social-wrapper {
+	vertical-align: middle;
+}
 span.social a{
 	margin-right:12px;
-	font-size:16px;
+	font-size:20px;
 }
 
 
@@ -77,12 +85,13 @@ span.social a{
 	position: relative;
 }
 .buzzword {
-	opacity: 0; /* to start, fades in */
+	opacity: 1; /* to start, fades in */
 	color: var(--md-blue);
 }
 
-.h2 {
+h2 {
 	font-size: 40px;
+	font-family: 'Caveat', sans-serif;
 }
 
 .img-social {
@@ -91,6 +100,10 @@ span.social a{
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-bottom: 24px;
+}
+
+.jumbotron h1 {
+	font-size: 45px;
 }
 
 .jumbotron h2 {
@@ -273,12 +286,20 @@ a.social-link:hover {
 
 /*extra margins*/
 
+.m-t-0 {
+	margin-top: 0px;
+}
+
 .m-t-10 {
 	margin-top: 10px;
 }
 
 .m-t-30{
 	margin-top: 30px;
+}
+
+.m-b-20 {
+	margin-bottom: 20px;
 }
 
 .m-b-30 {
