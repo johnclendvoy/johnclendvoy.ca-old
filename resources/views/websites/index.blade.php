@@ -30,16 +30,13 @@
 					<div class="row m-b-90">
 						<div class="col-xs-12 col-sm-4 col-md-5 col-lg-4 m-b-20">
 							<a href="{{ $project->url }}" title="{{ $project->name }}">
-								<img class="img img-responsive" src="{{ $project->image('feature') }}" alt="{{ $project->name}}" title="{{ $project->name }}">
+								<img class="img img-responsive shadow" src="{{ $project->image('feature') }}" alt="{{ $project->name}}" title="{{ $project->name }}">
 							</a>
 						</div>
 
 						<div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
 							<h3 class="m-t-0">{{ $project->name }}</h3>
-
-
 							<p class="m-b-20">{!! $project->description !!}</p>
-
 							@if($project->design && !empty($project->slug))
 							<div><a target="_blank" href="{{$project->url}}"><i class="fa fa-external-link"></i> {{$project->slug}}</a></div>
 							@endif
