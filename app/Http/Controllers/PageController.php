@@ -20,25 +20,23 @@ class PageController extends Controller
 			[
 				'title' => 'Website Development',
 				'link' => '/website-development',
-				// 'image' => '/images/home/tech_company.png',
-				'image' => '/svg/undraw_experience_design.svg',
+				'image' => '/svg/undraw_programming.svg',
+				'image_alt' => 'Programmer with multiple screens',
 				'image_alt' => 'Website Development',
-				'description' => 'I help people build their online prescence by designing, developing and hosting websites and web apps with <a href="https://laravel.com" target="_blank">Laravel</a>, and <a href="http://tailwindcss.com" target="_blank">Tailwind</a>.',
+				'description' => 'I help people build their online prescence by designing, developing and hosting custom websites and web apps with <a href="https://laravel.com" target="_blank">Laravel</a> and <a href="http://tailwindcss.com" target="_blank">Tailwind</a>.',
 				'button_text' => 'Learn More'
 			],
 			[
 				'title' => 'Software',
 				'link' => '/software',
-				// 'image' => '/images/home/procedural_mountains.png',
-				'image' => '/svg/undraw_programming.svg',
-				'image_alt' => 'Programmer with multiple screens',
-				'description' => 'I\'ve used many different technologies to develop games, software tools and other experiments.',
+				'image' => '/svg/undraw_progressive_app.svg',
+				'image_alt' => 'Software Development',
+				'description' => 'I\'ve used many different technologies to develop software tools, games and other experiments.',
 				'button_text' => 'View Software'
 			],
 			[
 				'title' => 'Digital Art',
 				'link' => '/art',
-				// 'image' => '/images/home/codezillla_small.jpg',
 				'image' => '/svg/undraw_art.svg',
 				'image_alt' => 'Codezillla logo',
 				'description' => 'I produce electronic music as well as create visuals for music videos using <a href="http://processing.org" target="_blank">Processing.</a>',

@@ -2,7 +2,7 @@
 @extends('layouts.public')
 @section('content')
 
-	<div class="jumbotron home">
+	<div class="jumbotron home m-b-90">
 		<div class="container text-center">
 			<h1>JOHN C. LENDVOY</h1>
 			<h2 class="script buzzword">Software Development</h2>
@@ -19,7 +19,7 @@
 							<img class="m-x-auto max-height-200 img img-responsive" src="{{$section['image']}}" alt="{{$section['image_alt']}}" title="{{$section['image_alt']}}">
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-7">
-							<h2>{{$section['title']}}</h2>
+							<h2 class="m-t-0">{{$section['title']}}</h2>
 							<p class="m-b-20">{!! $section['description'] !!}</p>
 							<a class="btn btn-default" href="{{$section['link']}}">{{$section['button_text']}}</a>
 						</div>
