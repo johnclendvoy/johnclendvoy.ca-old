@@ -8,14 +8,17 @@
 	--lt-green: #e2fdac;
 	--lt-blue: #8fd5d3;
 	--md-blue: #68acaa;
-	--dk-blue: #2d4244;
+	--dk-blue: #488c8a;
+	--brand-blue: #2d4244;
+
+	--trans-short: 0.2s;
 }
 
 a {
-    color: var(--md-blue);
+    color: var(--dk-blue);
 }
 a:hover {
-	color: var(--dk-blue);
+	color: var(--md-blue);
 }
 
 p {
@@ -62,12 +65,12 @@ a.logo {
 	right: 0;
 	left: 0;
 	height: 40px;   /* Height of the footer */
-	background: var(--dk-blue);
+	background: var(--brand-blue);
 	padding-top: 10px;
 }
 
 #footer span.footer-text {
-	color: var(--lt-blue);
+	color: var(--lt-green);
 	font-size:16px;
 }
 .social-wrapper {
@@ -110,7 +113,7 @@ h2 {
 	margin-top: 10px;
 }
 .jumbotron {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 	color: var(--lt-green);
 	padding-top: 5px;
 	padding-bottom: 12px;
@@ -127,9 +130,8 @@ h2 {
 	border: none;
 	margin-right: 6px;
 
-	/*transition-timing-function: ease;*/
-    -webkit-transition: all 0.2s; /* Safari */
-    transition: all 0.2s;
+    -webkit-transition: all var(--trans-short); /* Safari */
+    transition: all var(--trans-short);
 }
 .btn.pull-right {
 	margin-right:0px;
@@ -143,18 +145,18 @@ h2 {
 .btn-default {
 	/*color: var(--lt-green);*/
 	color: var(--md-blue);
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 }
 .btn-default:hover {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 	color: var(--lt-blue);
 }
 .btn-default.active {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 	color: var(--lt-green);
 }
 .btn-default.active:hover {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 	color: var(--lt-blue);
 }
 .btn-group .btn {
@@ -177,32 +179,32 @@ h2 {
 .navbar-default .navbar-brand {
     color: var(--black);
     transition-timing-function: ease ;
-    -webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+    -webkit-transition: all var(--trans-short); /* Safari */
+    transition: all var(--trans-short);
 } 
 .navbar-default .navbar-brand:hover {
     color: var(--lt-blue);
-    background: var(--dk-blue);
+    background: var(--brand-blue);
 } 
 
 .navbar-default .navbar-nav>li>a.active {
-	background-color: var(--dk-blue);
-	color: var(--lt-blue);
+	background-color: var(--brand-blue);
+	color: var(--lt-green);
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #14191b;
+    color: var(--black);
     transition-timing-function: ease;
-    -webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+    -webkit-transition: all var(--trans-short); /* Safari */
+    transition: all var(--trans-short);
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: var(--lt-green);
-    background: var(--dk-blue);
+    color: var(--lt-blue);
+    background: var(--brand-blue);
 }
 
 .navbar-default .navbar-nav>li>a.active:hover {
-	background-color:  var(--dk-blue);
+	background-color:  var(--brand-blue);
 	color: var(--lt-blue);
 }
 
@@ -216,14 +218,14 @@ h2 {
 
 /*hamburger menu*/
 button.navbar-toggle {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 	border-radius: 0px;
 	border:none;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background-color: var(--dk-blue);
+	background-color: var(--brand-blue);
 }
 
 .navbar-default .navbar-toggle:focus .icon-bar, 
@@ -233,30 +235,34 @@ button.navbar-toggle {
 
 .navbar-default .navbar-toggle span.icon-bar {
     background-color:var(--md-blue);
-    -webkit-transition: all 0.2s; /* Safari */
-    transition: all 0.2s;
+    -webkit-transition: all var(--trans-short); /* Safari */
+    transition: all var(--trans-short);
 }
 
 .navbar-default .navbar-collapse {
-	border-color: var(--dk-blue);
+	border-color: var(--brand-blue);
 	border-width: 3px;
 }
-
 
 .navbar-brand {
 	padding-top:10px;
 }
-img.logo {
-	height:30px;
+
+#jcl-link:hover .logo-svg {
+	fill: var(--lt-blue);
+}
+
+.logo-svg {
+	transition: fill var(--trans-short);
+    -webkit-transition: fill var(--trans-short); /* Safari */
 }
 
 .extra-margin-top {
 	margin-top: 30px;
 }
 
-a.social-link
-{
-	color: var(--lt-green);
+a.social-link {
+	color: var(--md-blue);
 }
 
 a.social-link:hover {
@@ -271,12 +277,6 @@ a.social-link:hover {
 	background-position: 50%;
 }
 
-
-.project-description {
-	margin-bottom: 90px;
-}
-
-
 /*Form inputs*/
 
 .square {
@@ -284,7 +284,7 @@ a.social-link:hover {
 	background-color: var(--lt-grey);
 }
 
-/*extra margins*/
+/* utility classes */
 
 .m-t-0 {
 	margin-top: 0px;
@@ -319,30 +319,8 @@ a.social-link:hover {
 	max-height: 200px;
 }
 
-/* Custom for Slick Slider */
 
-.slick-prev:before {
-	color: #2E3436;
-}
-.slick-next:before {
-	color: #2E3436;
-}
-
-.slick-slide {
-	width:140px;
-	padding: 5px;
-}
-.cursor-zoom-in:hover {
-	cursor: zoom-in;
-}
-
-
-/* for the animated background */
-
-#animated-bg > canvas {
-	position: fixed; top: 0; left: 0; z-index: -1;
-} 
-
+/* keep footer at bottom */
 #animated-bg {
 	min-height: 100%;
 	position: relative; z-index: 2;
