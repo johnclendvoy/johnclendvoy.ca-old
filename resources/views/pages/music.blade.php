@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2>Codezillla</h2>
+				<h2>Music Videos</h2>
 				<p>The following is a collection of songs composed, mixed and mastered by me and released under the name Codezillla. The album is called <i>Fly Real High</i> and it is available for streaming on all the popular services. The files are available for free download from <a href="//codezillla.bandcamp.com">Bandcamp</a> or <a href="//soundcloud.com/codezillla">Soundcloud</a>.
 				</p>
 				<p>I also had fun programming the visuals for each of these songs using <a href="//processing.org">Processing</a>. A program that makes it easy for anyone to get started working with 2D and 3D graphics. Check them out below! </p>

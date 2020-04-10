@@ -21,9 +21,17 @@ a:hover {
 	color: var(--md-blue);
 }
 
+a.grow img {
+	transition: all var(--trans-short);
+}
+a.grow img:hover {
+	transform: scale(1.05);
+}
+
 p {
 	margin-bottom: 45px;
 	line-height: 1.4em;
+	font-size: 1.1em;
 }
 
 html, body {
@@ -86,10 +94,6 @@ span.social a{
 #wrapper {
 	min-height: 100%;
 	position: relative;
-}
-.buzzword {
-	opacity: 1; /* to start, fades in */
-	color: var(--md-blue);
 }
 
 h2 {
@@ -323,6 +327,19 @@ a.social-link:hover {
 	-webkit-box-shadow: 0px 6px 24px -1px rgba(0,0,0,0.13);
 	-moz-box-shadow: 0px 6px 24px -1px rgba(0,0,0,0.13);
 	box-shadow: 0px 6px 24px -1px rgba(0,0,0,0.13);
+}
+.font-md {
+	font-size: 1.1em !important;
+}
+.text-white {
+	color: var(--white);
+}
+
+.text-lt-blue {
+	color: var(--lt-blue);
+}
+.text-md-blue {
+	color: var(--md-blue);
 }
 
 
