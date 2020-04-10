@@ -7,7 +7,6 @@
 @section('content')
 
 	<div class="container">
-
 		<div class="row">
 			<div class="col-sm-12">
                 <h2>Website Development</h2>
@@ -19,10 +18,41 @@
                 <h2>My Workflow</h2>
                 <p>I typically build sites using <a href="//laravel.com">Laravel</a>, a highly customizable <a href="//php.net">PHP</a> framework. Over the years, I have become and expert with this framework and its ecosystem so I can get projects up and running quickly, and maintain them easily. I like to avoid pre-packaged themes when I can and take pride in designing custom, user friendly interfaces from scratch with <a href="//tailwindcss.com">Tailwind</a>. Look below for a few examples of my work, these sites are designed, developed, hosted and maintained by me.</p>
 			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h4 class="text-center">Trusted By</h4>
+		<div class="row">
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://medicinehatvolunteers.ca">
+					<img class="img img-responsive" src="/images/trusted/cmh_square.png" alt="City Of Medicine Hat" title="Medicine Hat Volunteers">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://medhatvball.com">
+					<img class="img img-responsive" src="/images/trusted/mhvl_square.png" alt="Medicine Hat Volleyball League" title="Medicine Hat Volleyball League">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://riteenterprises.ca">
+					<img class="img img-responsive" src="/images/trusted/rite_enterprises_square.png" alt="Rite Enterprises Tree Services" title="Rite Enterprises Tree Services">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://badlandsvet.com">
+					<img class="img img-responsive" src="/images/trusted/bvs_square.png" alt="Badlands Veterinary Services" title="Badlands Veterinary Services">
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
             <div class="col-sm-12 m-b-30">
                 <h2 class="script">Websites I've Built</h2>
             </div>
-
 
 			@forelse($projects as $project)
 

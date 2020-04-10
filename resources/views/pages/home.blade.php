@@ -9,7 +9,7 @@
 		</div>
 	</div>
 
-	<div class="container m-b-30">
+	<div class="container m-b-90">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="row">
@@ -25,35 +25,6 @@
 			</div>
 		</div>
 	</div>
-
-
-	{{-- <div class="jumbotron m-b-90"> --}}
-		<div class="container m-b-90">
-			<h4 class="text-center">Trusted By</h4>
-			<div class="row">
-				<div class="col-xs-6 col-sm-3">
-					<a class="grow" href="https://medicinehatvolunteers.ca">
-						<img class="img img-responsive" src="/images/trusted/cmh_square.png" alt="City Of Medicine Hat" title="Medicine Hat Volunteers">
-					</a>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<a class="grow" href="https://medhatvball.com">
-						<img class="img img-responsive" src="/images/trusted/mhvl_square.png" alt="Medicine Hat Volleyball League" title="Medicine Hat Volleyball League">
-					</a>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<a class="grow" href="https://riteenterprises.ca">
-						<img class="img img-responsive" src="/images/trusted/rite_enterprises_square.png" alt="Rite Enterprises Tree Services" title="Rite Enterprises Tree Services">
-					</a>
-				</div>
-				<div class="col-xs-6 col-sm-3">
-					<a class="grow" href="https://badlandsvet.com">
-						<img class="img img-responsive" src="/images/trusted/bvs_square.png" alt="Badlands Veterinary Services" title="Badlands Veterinary Services">
-					</a>
-				</div>
-			</div>
-		</div>
-	{{-- </div> --}}
 
 	<div class="jumbotron m-b-90">
 		<div class="container m-t-30 m-b-30">
