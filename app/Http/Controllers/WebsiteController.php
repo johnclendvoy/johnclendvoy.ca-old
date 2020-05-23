@@ -19,20 +19,9 @@ class WebsiteController extends Controller
 		return view('websites.index', compact('category', 'projects', 'title'));
 	}
 
-	public function home1()
+	public function info()
 	{
-		return view('wip.home1');
+		return view('websites.info');
 	}
-
-	public function timetracker()
-	{
-		return view('wip.timetracker');
-	}
-
-	public function listings1()
-	{
-		return view('wip.listings1');
-	}
-
 
 }

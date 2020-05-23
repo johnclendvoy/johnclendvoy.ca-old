@@ -9,19 +9,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
+
                 <h2>Website Development</h2>
-                <p>From simple single page sites for small businesses to large enterprise software with hundreds of active users, I've worked on projects of all sizes an scopes. I have been building websites and web-based applications for the past 4 years of my career. Whether your goal is selling products online, or sharing your business with the world, I can help. Just <a href="/contact">get in touch</a> and we can discuss your vision!</p>
+				<p>From simple single page sites for small businesses to large enterprise software with hundreds of active users, I've worked on projects of all sizes an scopes. I have been building websites and web-based applications for the past 4 years of my career. Whether your goal is selling products online, or sharing your business with the world, I can help. Just <a href="/contact">get in touch</a> and we can discuss your vision!</p>
 
                 <h2>Website Maintenance</h2>
-                <p>Do you have a website already, but need someone to look after it? I can also help! I have servers available where I can host your existing project, then I can get your site up to date and make adjustments as needed to get it back into shape.</p>
+				<p>Do you have a website already, but need someone to look after it? I can also help! I have servers available where I can host your existing project, then I can get your site up to date and make adjustments as needed to get it back into shape.</p>
 
-                <h2>My Workflow</h2>
-                <p>I typically build sites using <a href="//laravel.com">Laravel</a>, a highly customizable <a href="//php.net">PHP</a> framework. Over the years, I have become and expert with this framework and its ecosystem so I can get projects up and running quickly, and maintain them easily. I like to avoid pre-packaged themes when I can and take pride in designing custom, user friendly interfaces from scratch with <a href="//tailwindcss.com">Tailwind</a>. Look below for a few examples of my work, these sites are designed, developed, hosted and maintained by me.</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
 		<h4 class="text-center">Trusted By</h4>
 		<div class="row">
 			<div class="col-xs-6 col-sm-3">
@@ -45,7 +39,40 @@
 				</a>
 			</div>
 		</div>
+
+                <h2>My Workflow</h2>
+				<p>I typically build sites using <a href="//laravel.com">Laravel</a>, a highly customizable <a href="//php.net">PHP</a> framework. Over the years, I have become and expert with this framework and its ecosystem so I can get projects up and running quickly, and maintain them easily. I like to avoid pre-packaged themes when I can and take pride in designing custom, user friendly interfaces from scratch with <a href="//tailwindcss.com">Tailwind</a>. Look below for a few examples of my work, these sites are designed, developed, hosted and maintained by me.
+				</p>
+				{{-- <a href="/website-development/how-it-works" class="btn btn-default">Learn How Websites Work</a> --}}
+			</div>
+		</div>
 	</div>
+
+	{{-- <div class="container">
+		<h4 class="text-center">Trusted By</h4>
+		<div class="row">
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://medicinehatvolunteers.ca">
+					<img class="img img-responsive" src="/images/trusted/cmh_square.png" alt="City Of Medicine Hat" title="Medicine Hat Volunteers">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://medhatvball.com">
+					<img class="img img-responsive" src="/images/trusted/mhvl_square.png" alt="Medicine Hat Volleyball League" title="Medicine Hat Volleyball League">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://riteenterprises.ca">
+					<img class="img img-responsive" src="/images/trusted/rite_enterprises_square.png" alt="Rite Enterprises Tree Services" title="Rite Enterprises Tree Services">
+				</a>
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<a class="grow" href="https://badlandsvet.com">
+					<img class="img img-responsive" src="/images/trusted/bvs_square.png" alt="Badlands Veterinary Services" title="Badlands Veterinary Services">
+				</a>
+			</div>
+		</div>
+	</div> --}}
 
 
 	<div class="container">
