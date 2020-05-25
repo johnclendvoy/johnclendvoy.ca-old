@@ -19,9 +19,9 @@ class WebsiteController extends Controller
 		return view('websites.index', compact('category', 'projects', 'title'));
 	}
 
-	public function info()
+	public function how_it_works()
 	{
-		return view('websites.info');
+		return view('websites.how_it_works');
 	}
 
 }
