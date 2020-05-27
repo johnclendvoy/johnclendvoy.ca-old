@@ -62,16 +62,19 @@ $back_end_code =
 		<div class="row">
 			<div class="col-sm-12">
 
-                <img class="m-b-30 img img-responsive" src="/svg/undraw_online_test.svg" alt="how does a website work?">
-
                 <h2>How does it all work?</h2>
 
+                <p>Although websites are everywhere around us, and seemingly everone has one, there are many parts that need to work together in order for a website to work. If you would like to learn more about what is happening behind the scenes, you came to the right place! The following page will break down what happens when you use a website, as well as what goes into building one. </p>
 
-                <p>Although websites are everywhere around us, and seemingly everone has one, there are many parts that need to work together in order for a website to work. If you would like to learn more about what is happening behind the scenes, you came to the right place! The following page will break down what happens when you use a website, as well as what goes into building one. 
+                <img class="m-b-30 m-x-auto max-height-300 img img-responsive" src="/svg/undraw_online_test.svg" alt="how does a website work?">
 
-                <p class="alert alert-info">This guide was created as an introduction to web development for people who are curious and want to understand more about how their website functions. Many technical details have been left out to keep it interesting.</p>
+                <p>
+                    <div class="alert alert-info">
+                        This guide was created as an introduction to web development for people who are curious and want to understand more about how their website functions. Many technical details have been left out to keep it interesting.
+                    </div>
+                </p>
 
-            </div>
+			</div>
         </div>
 
         <div class="row">
@@ -80,10 +83,9 @@ $back_end_code =
 
                 <p>A good place to begin when talking about websites is with web browsers. If you do anything online, you are doing it within a web browser. A web browser is an application on your computer/tablet/smartphone that is responsible for displaying web pages to you. </p>
 
-
                 <p> When you type something into your search bar in your browser, you are making a request for a web page. The browser will essentially look in the right place for you and return to you a version of the web page that is viewable and looks the way the developer intended. Each web browser has its own quirks, so it is the developer's responsibility to ensure that the page returned looks and works the same when viewed with any web browser.</p>
 
-                <img class="m-b-30 img img-responsive" src="/svg/undraw_mobile_browsers.svg" alt="people using different internet browsers">
+                <img class="max-height-400 m-b-30 m-x-auto img img-responsive" src="/svg/undraw_mobile_browsers.svg" alt="people using different internet browsers">
 
                 <p>There are many web browsers available to use, and some are only available on certain devices. For example, if you use an iPhone, iPad or a Mac, you will likely be familiar with Safari, on Windows devices there is a good chance you have used Edge or maybe Internet Explorer. Firefox and Chrome are two other very popular browsers that are available on most devices.</p>
 
@@ -122,10 +124,12 @@ $back_end_code =
 
                 <p>The front end (also known as the "client side") of the website is responsible for how the pages look. This means the layout of the page, the colours, the fonts, the images, as well as spacing and sizing are all controlled on the front end. Fundamentaly, every page on the internet is composed of a mix of at least HTML (responsible for layout), and CSS (responsible for style), and usually JavaScript as well (which is used to add interactive elements to a page). These 3 languages are the backbone of all web development, web browsers will convert this code into a viewable web page.</p>
 
-                <div class="alert alert-success">
-                    <h4>Try This Out:</h4>
-                    If you are on a desktop computer, you can right-click on a website and select "View Page Source" to view the front end source code responsible for showing the page you are on.
-                </div>
+                <p>
+                    <div class="alert alert-success">
+                        <h4>Try It Out!</h4>
+                        If you are on a desktop computer, you can right-click on a website and select "View Page Source" to view the front end source code responsible for showing the page you are on.
+                    </div>
+                </p>
 
                 <p> There are various tools that make creating the front end easier, for example there are many CSS frameworks available such as Bootstrap or Tailwind. These frameworks help to make common actions easier so developers don't always have to design everything from the ground up when making many websites with similar needs.</p>
 
@@ -146,7 +150,7 @@ $back_end_code =
                 <pre class="language-php"><code>{{$back_end_code}}</code></pre>
             </div>
             <div class="col-sm-12 col-md-5 m-b-30">
-                <h4>What it does</h4>
+                <h4>What it does:</h4>
                 <ul>
                     <li></li>
                 </ul>
@@ -165,11 +169,7 @@ $back_end_code =
 
                 <p>Basically, a web server is just a computer. It doesn't have a mouse, keyboard or monitor connected to it. It never turns off, and it is sitting in an air conditioned warehouse in a stack with many many similar computers.</p>
 
-                <img class="m-b-30 img img-responsive" src="/svg/undraw_server_cluster.svg" alt="a server stack connected to devices">
-
-                <p></p>
-
-                <p></p>
+                <img class="m-x-auto max-height-300 m-b-30 img img-responsive" src="/svg/undraw_server_cluster.svg" alt="a server stack connected to devices">
 
                 <p></p>
 
@@ -184,7 +184,7 @@ $back_end_code =
 
                 <p>So you have a bunch of source code written, and it's sitting on a web server, but that doesn't mean anyone else can view it yet! The next thing you need in order to share your website with the world is a domain name. Domain names should be short, easy to say, easy to read (be careful if your business name is "Pen Island"), and related to your website's content. The domain name of this website is "johnclendvoy.ca" which is great because that is my name! </p>
 
-                <img class="m-b-30 img img-responsive" src="/svg/undraw_domain_names.svg" alt="choosing a domain name">
+                <img class="m-x-auto max-height-300 m-b-30 img img-responsive" src="/svg/undraw_domain_names.svg" alt="choosing a domain name">
 
                 <p>A domain name is easy to register for. There are many sites that offer this service, such as NameCheap and GoDaddy to name a few. If you are buying a domain for your business, you may want to consider buying a few different variations. It is usually relatively cheap to register a domain for a year, so having a few registered might make sense.</p>
 
