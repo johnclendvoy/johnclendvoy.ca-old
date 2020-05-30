@@ -13,12 +13,9 @@
 @php
 $front_end_code =
 '<style>
-    p.red-text {
-        color: #AB2212;
-        margin-bottom: 20px;
-    }
-    .thick-grey-border {
-        border: 4px solid #565656;
+    /* this is CSS code */
+    .thick-blue-border {
+        border: 4px solid #565699;
         border-radius: 4px;
         padding: 20px;
     }
@@ -30,29 +27,41 @@ $front_end_code =
     }
 </style>
 
-<div class="thick-grey-border">
+<!-- This is HTML code -->
+<div class="thick-blue-border">
     <h2>This is a Title</h2>
-    <p class="red-text">This is some red text. There is an icon on the button.</p>
-    <button class="black-button" onclick="alert(\'Hello\')">
+    <p>This is some text. Click the button to run the Javascript code.</p>
+    <button class="black-button" onclick="showMessage()">
         <i class="fa fa-smile-o"></i>
         This is a Button
     </button>
-</div>';
+</div>
+
+<script>
+<!-- This is Javascript code -->
+function showMessage() {
+    let message = \'Hello world!\';
+    alert(message);
+}
+</script>
+';
 
 $back_end_code =
 'public function showTodaysPosts() {
 
-    $allPosts = Post::where(\'active\', true)->get();
-    $title = \'Posts from \' . date(\'F jS, Y\');
+    $title = \'Blog Posts from \' . date(\'F jS, Y\');
+    $allPosts = BlogPost::where(\'active\', true)->get();
 
-    $todaysPosts = $allPosts->filter(static function (Post $post) {
+    $todaysPosts = $allPosts->filter(function (Post $post) {
         return $post->created_date->isToday();
     });
 
-    return View::create(\'posts.index\')->with([
+    $content = View::create(\'posts.index\')->with([
         \'title\' => $title,
         \'posts\' => $todaysPosts,
     ]);
+
+    return $content;
 }';
 
 @endphp
@@ -70,7 +79,7 @@ $back_end_code =
 
                 <p>
                     <div class="alert alert-info">
-                        This guide was created as an introduction to web development for people who are curious and want to understand more about how their website functions. Many technical details have been left out to keep it interesting.
+                        This guide was created as an introduction for people without any prior knowledge of web development who want to understand how their website is set up. Many technical details have been left out to keep it interesting.
                     </div>
                 </p>
 
@@ -81,13 +90,13 @@ $back_end_code =
 			<div class="col-sm-12">
                 <h2>What is a Web Browser?</h2>
 
-                <p>A good place to begin when talking about websites is with web browsers. If you do anything online, you are doing it within a web browser. A web browser is an application on your computer/tablet/smartphone that is responsible for displaying web pages to you. </p>
+                <p>A good place to begin talking about web development is with web browsers. If you have ever visited a website, you have also used a web browser! A web browser is <b>an application</b> on your computer/tablet/smartphone that is <b>responsible for displaying web pages</b> to you. </p>
 
-                <p> When you type something into your search bar in your browser, you are making a request for a web page. The browser will essentially look in the right place for you and return to you a version of the web page that is viewable and looks the way the developer intended. Each web browser has its own quirks, so it is the developer's responsibility to ensure that the page returned looks and works the same when viewed with any web browser.</p>
+                <p>There are many web browsers available to use, and some are only available on certain devices. If you use an iPhone, iPad or a Mac, you will likely be familiar with Safari, on Windows devices there is a good chance you have used Edge or maybe Internet Explorer. Firefox and Chrome are two other very popular browsers that are available on most devices.</p>
 
                 <img class="max-height-400 m-b-30 m-x-auto img img-responsive" src="/svg/undraw_mobile_browsers.svg" alt="people using different internet browsers">
 
-                <p>There are many web browsers available to use, and some are only available on certain devices. For example, if you use an iPhone, iPad or a Mac, you will likely be familiar with Safari, on Windows devices there is a good chance you have used Edge or maybe Internet Explorer. Firefox and Chrome are two other very popular browsers that are available on most devices.</p>
+                <p>When you type something into your search bar in your browser, you are making a request for a web page. The browser will find and show you a web page that you can view. Each web browser has its own quirks, so it is the developer's responsibility to ensure that the page returned looks good and works well, no matter which web browser is used to view the page.</p>
 
                 <p>At the end of the day, all of these browsers do the same thing, but come with their own pros and cons, some load a little faster, some look a little better, some have a few more features. It comes down personal preference, if you have a browser that lets you view the websites you want, that's all you need!</p>
             </div>
@@ -97,7 +106,7 @@ $back_end_code =
 			<div class="col-sm-12">
                 <h2>What is Source Code?</h2>
 
-                <p>A website is made up of many files written in special languages that can be read by computers and internet browsers. The collection of files that make up a website are called it's source code. It is the developer's job to understand how to write code in these languages and create the correct combination of files so that in the end, they produce a website looks and functions as expected. There are a number of different languages used, and each one is responsible for a different part of the website.</p>
+                <p>A website is made up of many files written in special languages that can be read by computers and web browsers. The collection of <b>files that make up a website</b> are called it's source code. It is the developer's job to understand how to write code in these languages and create the correct combination of files so that in the end, they produce a website looks and works as expected. There are a number of different languages used, and each one is responsible for a different part of the website.</p>
 
                 <p>To get an idea of what this looks like, check out the following block of code and it's result:</p>
             </div>
@@ -116,13 +125,13 @@ $back_end_code =
 
         <div class="row">
             <div class="col-sm-12">
-                <p>As you can see, even in this very simple example, resulting in a box with a border, some text, and a button, there is a lot of code responsible for making it look good. A lot more code could probably be added to make it look even better, not to mention making the button do something more interesting!</p>
+                <p>As you can see, even in this very simple example, resulting in a box with a border, some text, and a button, there is a lot of code responsible for making it look good and work correctly. A lot more code could easily be added to make it look even better, not to mention making the button do something more interesting!</p>
 
-                <p>The source code for most projects can be broken into two parts, the "Front End" and the "Back End" the two sides work together to display each page of your website.</p>
+                <p>The source code for most projects can be broken into two parts, the <b>front end</b> and the <b>back end</b> the two sides work together to display each page of your website.</p>
 
                 <h3>Front End</h3>
 
-                <p>The front end (also known as the "client side") of the website is responsible for how the pages look. This means the layout of the page, the colours, the fonts, the images, as well as spacing and sizing are all controlled on the front end. Fundamentaly, every page on the internet is composed of a mix of at least HTML (responsible for layout), and CSS (responsible for style), and usually JavaScript as well (which is used to add interactive elements to a page). These 3 languages are the backbone of all web development, web browsers will convert this code into a viewable web page.</p>
+                <p>The front end (also known as the "client side") of the website is <b>responsible for how the pages look</b>. This means, the layout of the page, the colours, the fonts, the images, as well as spacing and sizing are all controlled on the front end. The block of source code shown above is an example of front end code. At their core, every web page is composed of at least <a href="https://en.wikipedia.org/wiki/HTML" title="Hypertext Markup Language">HTML</a> (responsible for layout), and <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a> (responsible for style), and usually <a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a> as well (which is used to add interactive elements to a page). These three languages are the backbone of all websites and web browsers can convert this code into a viewable web page.</p>
 
                 <p>
                     <div class="alert alert-success">
@@ -139,9 +148,12 @@ $back_end_code =
 
                 <p>Not all websites require a back end. If your site is simple enough, it may be enough to simply host the front end pages you have created on a server and call it a day. For more complex sites, however, a backend is required. </p>
                     
-                <p>The back end (also known as the "server side") of a website is required when the content on the website changes frequently, think of a blog, where posts are added weekly, or a social media site where users can upload their own pictures. The main job of the back end code is to retreive the correct data to show from a database, insert that data into the approprate front end code, then return a viewable page to the web browser.</p>
-            </div>
+                <p>The back end (also known as the "server side") of a website is <b>required when the content on the website changes frequently</b>, these are called dynamic websites. Think of a blog, where posts are added weekly, or a social media site where users can upload their own pictures. The main job of the back end code is to retreive the correct data to show from a database, insert that data into the approprate front end code, then return a viewable page to the web browser.</p>
 
+                <p>Common backend programming languages include PHP, Python, and Ruby. Unlike front end code, this code is executed on the web server, and not the web browser. This means, the work done on the back end will happen quickly for everyone, no matter if you are using a state-of-the-art gaming PC, or a 6 year old mobile phone. It is the developer's job to make sure that the back end code does what it needs to efficiently, so the users do not have to wait long for a page to load.</p>
+
+                <p>Take a look at the example below, which could be used for an imaginary blog website, to see how the backend code is different from the front end code:</p>
+            </div>
         </div>
 
         <div class="row">
@@ -152,14 +164,19 @@ $back_end_code =
             <div class="col-sm-12 col-md-5 m-b-30">
                 <h4>What it does:</h4>
                 <ul>
-                    <li></li>
+                    <li>Create a title based on today's date formated like "{{date('F jS, Y')}}"</li>
+                    <li>Retreive all the active blog posts from the database</li>
+                    <li>Filter through all the blog posts and only keep the ones that were created today</li>
+                    <li>Create a front end page, that will show the title and the blog posts</li>
+                    <li>Finally, return the page content to the web browser.</li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-12">
-                <p>Common backend programming languages include PHP, Python, and Node. Unlike front end code, this code is executed on the web server, and not the web browser. This means, the work done on the back end will happen quickly for everyone, no matter if you are using a state-of-the-art gaming PC, or a 6 year old mobile phone. It is the developer's job to make sure that the back end code does what it needs to efficiently, so the user's do not have to wait long for a page to load.</p>
+                <p>Again, this is a very basic example. What isn't shown is all the code reponsible for seeing older blog posts, creating new ones, deleting old ones, updating their content, or setting them to active. As complexity of the website increases so does the amount of code needed. There could be hundreds of files each with hundreds of lines of code needed to get the job done.</p>
+                <p>Just like front end languages, a number of back end frameworks exists to help developers write code for a website quickly without having to worry about setting up the common parts that many websites share. <a href="https://laravel.com">Laravel</a> is a popular PHP framework, and my go-to choice when building websites. Other popular back end frameworks are Django and Ruby on Rails.</p>
             </div>
         </div>
 

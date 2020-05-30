@@ -57,6 +57,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: normal;
 	font-size: 16px;
+	padding: 0;
 }
 
 a.logo {
