@@ -80,7 +80,7 @@ $back_end_code =
                 <p>
                     <div class="alert alert-info">
                         <h4>A Note to Readers</h4>
-                        This guide was created as an introduction for people without any prior knowledge of web development. Many technical details have been left out to keep it interesting and quick.
+                        This guide was created as an introduction for people without any prior knowledge of web development. Many technical details have been left out to keep it interesting and light.
                     </div>
                 </p>
 
@@ -97,11 +97,11 @@ $back_end_code =
 
                 <img class="max-height-400 m-b-30 m-x-auto img img-responsive" src="/svg/undraw_mobile_browsers.svg" alt="people using different internet browsers">
 
-                <p>When you type something into your search bar in your browser, you are making a request for a web page. The browser will find the source code of the page you are looking for, and convert it into a format that you can view.</p>
+                <p>When you type something into the search bar in your browser, you are making a request for a web page. The browser will find the source code of the page you are looking for, and convert it to a format that you can view.</p>
 
                 <p>Each web browser has its own quirks, so it is the developer's responsibility to ensure that the page returned looks good and works well, no matter which web browser is used to view the page.</p>
 
-                <p>At the end of the day, all web browsers do the same thing, but each comes with their own pros and cons. Some load a little faster, some look a little nicer, some have a few more features. It comes down availability and personal preference; If you have a browser that lets you view the websites you want, that's all you need!</p>
+                <p>At the end of the day, all web browsers do the same thing, but each come with their own pros and cons. Some load a little faster, some look a little nicer, some have a few more features. It comes down availability and personal preference; If you have a browser that lets you view the websites you want, that's all you need!</p>
             </div>
         </div>
 
@@ -109,7 +109,7 @@ $back_end_code =
 			<div class="col-sm-12">
                 <h2>What is Source Code?</h2>
 
-                <p>A website is made up of many files written in special languages that can be understood by computers and web browsers. The collection of <b>files that make up a website</b> are refered to as it's source code. It is the developer's job to understand how to write code in these languages and create the correct combination of files so that the website looks and works as expected. There are a number of different languages used, each one is responsible for a different part of the website.</p>
+                <p>A website is made up of many files written in special languages that can be understood by computers and web browsers. The collection of <b>files that make up a website</b> are referred to as that website's source code. It is the developer's job to understand how to write and maintain code in these languages and create the correct combination of files so that the website looks and works as expected. There are a number of different languages used, and each one is responsible for a different part of the website.</p>
 
                 <p>To get an idea of what this looks like, check out the following block of code and it's result:</p>
             </div>
@@ -136,26 +136,26 @@ $back_end_code =
 
                 <p>The front end (also known as the "client side") of the website is <b>responsible for how the pages look</b>. This means, the layout of the page, the colours and fonts used, as well as spacing and sizing are all controlled on the front end. The block of source code shown above is an example of front end code.</p>
 
-                <p>At their core, every web page is composed of at least <a href="https://en.wikipedia.org/wiki/HTML" title="Hypertext Markup Language">HTML</a> and <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a>, which are responsible for the website's layout and style respectively. Most websites also use <a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a>, which is used to add interactive elements to a page. These three languages are the backbone of all websites and web browsers are able to convert this code into a viewable web page.</p>
+                <p>At their core, every web page is composed of at least <a href="https://en.wikipedia.org/wiki/HTML" title="Hypertext Markup Language">HTML</a> and <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a>, which are responsible for the layout and style of a page respectively. Most websites also use <a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript">JavaScript</a>, which is used to add more interactive elements to a page. These three languages are the backbone of all websites and we use web browsers to convert this code into a viewable web page.</p>
 
                 <p>
                     <div class="alert alert-success">
                         <h4>Try It Out!</h4>
-                        If you are on a desktop computer, you can right-click on a website and select "View Page Source" to view the front end source code responsible for showing the page you are on.
+                        If you are on a desktop computer, you can right-click on a website and select "View Page Source" to view the front end source code that was used to build the page you are on.
                     </div>
                 </p>
 
-                <p>There are various tools that make it easier to create the front end of a website. There are many CSS frameworks available such as Bootstrap or Tailwind. These frameworks help to make common components easier to create so developers don't have to design everything from the ground up when making many websites with similar needs.</p>
+                <p>There are various tools that make it easier to create the front end of a website. There are many CSS frameworks available such as Bootstrap or Tailwind. These frameworks make it faster to create styles for commonly used components so developers don't have to design everything from the ground up when making websites with similar needs.</p>
 
                 <p>Recently, the popularity of JavaScript frameworks, such as React, Angular and Vue has been growing quickly. Similarily, these are tools that make it easier for developers to quickly create JavaScript code, hiding away some of the "ugly" parts, and providing quick access to the most useful parts of the Javascript language.</p>
 
                 <h3>Back End</h3>
 
-                <p>Not all websites require a back end. If your site is simple, it may be enough to simply host the front end pages you have created on a server and call it a day. For more complex sites, however, a back end is required. </p>
+                <p>Not all websites require a back end. If your site is simple, it may be enough to simply host the front end pages you have created on a server and call it a day. Simple websites like this are called <b>static websites</b>. For more complex sites, however, a back end is required. </p>
                     
-                <p>The back end (also known as the "server side") of a website is <b>required when the content on the website changes frequently</b>, these are called dynamic websites. Examples of dynamic websites are blogs, where posts are added regularly, or a social media site where users can upload their own pictures. The main job of the back end code is to retreive the correct data to show from a database, insert that data into the approprate front end code, then return a page that is then made viewable by the web browser.</p>
+                <p>The back end (also known as the "server side") of a website is <b>required when the content on the website changes frequently</b>. These are called <b>dynamic websites</b>. Examples of dynamic websites are blogs, where posts are added regularly, or social media websites where users can upload their own pictures. The main job of the back end code is to access data in a database, including saving new data, retrieving and displaying specific data, updating or deleting existing data. Once the database has been accessed, the back end code will return a page that is viewable in the web browser.</p>
 
-                <p>Common backend programming languages include PHP, Python, and Ruby. Unlike front end code, this code is executed on the web server, and not the web browser. This means, the work done on the back end will happen quickly for everyone, no matter if you are using a state-of-the-art gaming PC, or a 6 year old mobile phone. It is the developer's job to make sure that the back end code does what it needs to efficiently, so the users do not have to wait long for a page to load.</p>
+                <p>Common backend programming languages include PHP, Python, and Ruby. Unlike front end code, this code is executed on the web server, and not the web browser. This means, the work done on the back end will happen quickly for everyone, no matter if you are using a state-of-the-art gaming PC, or a 6 year old mobile phone. It is the developer's job to make sure that the back end code runs efficiently, so the users do not have to wait long for the next page to load.</p>
 
                 <p>Take a look at the example below, which could be used on a blog website, to see how the backend code is different from the front end code:</p>
             </div>
@@ -182,7 +182,7 @@ $back_end_code =
             <div class="col-sm-12">
                 <p>Again, this is a very basic example. What isn't shown is all the code reponsible for seeing older blog posts, creating new ones, deleting old ones, updating their content, setting them to active, and many more actions like this. As the complexity of the website increases so does the amount of code needed. There could be thousands of lines of code needed to create a blog like the one I just described.</p>
 
-                <p>Just like front end languages, a number of back end frameworks exists to help developers write code for a website quickly without having to worry about setting up the common parts that many websites share. <a href="https://laravel.com">Laravel</a> is a popular PHP framework, and my go-to choice when building websites. Other popular back end frameworks are Django and Ruby on Rails.</p>
+                <p>Just like front end languages, a number of back end frameworks exists to help developers write code for a website quickly without having to worry about setting up the common parts that many websites share. <a href="https://laravel.com">Laravel</a> is a popular PHP framework, and my go-to choice when building websites. Other popular back end frameworks are Django (for Python developers) and Ruby on Rails.</p>
             </div>
         </div>
 
@@ -190,11 +190,13 @@ $back_end_code =
             <div class="col-sm-12">
                 <h2>What is a Web Server?</h2>
 
-                <p>Basically, a web server is just a computer. It doesn't have a mouse, keyboard or monitor connected to it. It never turns off, and it is sitting in an air conditioned warehouse in a stack with many many similar computers.</p>
+                <p>Basically, a web server is just a computer. It doesn't have a mouse, keyboard or a screen connected to it. It never turns off, and it is sitting in an air conditioned warehouse in a stack with many many similar computers.</p>
 
                 <img class="m-x-auto max-height-300 m-b-30 img img-responsive" src="/svg/undraw_server_cluster.svg" alt="a server stack connected to devices">
 
-                <p></p>
+                <p>There are a number of services that offer the use of their web servers for a monthly fee including AWS, Digital Ocean and Vultr. These companies work hard to make sure their servers stay up to date, load quickly and are available all the time. When you visit a website, you are actually making a request to a web server that contains the source code for the website. Unlike your own computer, the web server is configured to allow certain files (mainly website source code) to be accessed by anyone from any computer in the world.</p>
+
+                <p>Web servers are the computers that are responsible to run the back end code. They may also have databases set up on them to store data. Just like your own computer, they can be upgraded with extra memory or storage depending on the needs of the specific website.</p>
 
             </div>
         </div>
@@ -205,16 +207,15 @@ $back_end_code =
             <div class="col-sm-12">
                 <h2>What is a Domain?</h2>
 
-                <p>So you have a bunch of source code written, and it's sitting on a web server, but that doesn't mean anyone else can view it yet! The next thing you need in order to share your website with the world is a domain name. Domain names should be short, easy to say, easy to read (be careful if your business name is "Pen Island"), and related to your website's content. The domain name of this website is "johnclendvoy.ca" which is great because that is my name! </p>
+                <p>Each web server has it's own IP address. This is an number that looks something like "127.0.0.1" and is the main way the server can be accessed. Obviously, nobody is going to be handing out business cards with the IP address of their web server on them, so thats where domain names come in!</p>
+
+                <p>Domain names are the names we associate with a website. For example, johnclendvoy.ca, google.com, or wikipedia.org are all domain names.</p>
 
                 <img class="m-x-auto max-height-300 m-b-30 img img-responsive" src="/svg/undraw_domain_names.svg" alt="choosing a domain name">
 
-                <p>A domain name is easy to register for. There are many sites that offer this service, such as NameCheap and GoDaddy to name a few. If you are buying a domain for your business, you may want to consider buying a few different variations. It is usually relatively cheap to register a domain for a year, so having a few registered might make sense.</p>
+                <p>A domain name is easy to register for. There are many sites that offer this service, such as NameCheap and GoDaddy to name a few.</p>
 
-                <p>For example if you have a woodworking company called "Pine Woodworking" some domains you may want to register are: pinecutterswoodworking.com, pinecutterswoodworking.ca, pinecutters.com, pinecutters.ca, pinecutterwoodworking.com (or other common misspellings).</p>
-
-                <p>Once your domain is registered, you will be given permission to attach that domain name to a server of your choice. If you already have the source code of your website written, and it is available on a web server, you will want to direct any traffic to your domain name to your web server. This means when someone types in "pinecutterswoodworking.com" into their</p>
-
+                <p>Once your domain is registered to you, you will be given permission to attach that domain name to a web server of your choice. If you already have the source code of your website written, and it is available on a web server, you can associate your domain name with that web server, that way people can be directed to your site by entering your domain name!</p>
             </div>
         </div>
 
