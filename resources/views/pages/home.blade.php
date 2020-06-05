@@ -30,9 +30,9 @@
 		<div class="container m-t-30 m-b-30">
 			<div class="row">
 				<div class="col-xs-12 col-sm-9 col-md-8 col-lg-9">
-					<h2>Who Am I?</h2>
-					<p class="text-lt-blue">Hi, I'm John, here's a bit more about me.</p>
-					<p class="font-md text-white">I moved to Medicine Hat, Alberta, Canada in 2016 after earning a degree in Computer Science from the University of Saskatchewan. Before that, I attended the University of Regina where I earned a degree in Chemistry and was a proud member of the Cougars wrestling program. Aside from software development, I enjoy renovating my home with my wife, coaching the Medicine Hat Hawks wrestling team, building custom <a href="http://johntheleatherman.com">leather wallets</a>, and discovering great music.</p>
+					<h2 class="font-title">WHO AM I?</h2>
+					<h2 class="text-lt-blue script">Hi, I'm John, here's a bit more about me.</h2>
+					<p class="font-md text-white">I moved to Medicine Hat, Alberta, Canada in 2016 after earning a degree in Computer Science from the University of Saskatchewan. Before that, I attended the University of Regina where I earned a degree in Chemistry and was a proud member of the Cougars wrestling program. Aside from software development, I enjoy renovating my home with my wife, coaching the Medicine Hat Hawks wrestling team, building custom <a class="light" href="http://johntheleatherman.com">leather wallets</a>, and discovering great music.</p>
 				</div>
 				<div class="col-xs-push-2 col-xs-8 col-sm-push-0 col-sm-3 col-md-4 col-lg-3">
 					<img class="img img-responsive img-circle" src="/images/home/profile_pic_smaller.jpg" alt="John C. Lendvoy">

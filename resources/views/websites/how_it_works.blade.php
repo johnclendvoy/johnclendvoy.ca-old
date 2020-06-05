@@ -201,6 +201,22 @@ $back_end_code =
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>What is a Database?</h2>
+
+                <p>Some websites are more complex than others. Static websites are ones that do not change frequently. The set of pages are built once, and adjusted by the developer if needed. Dynamic websites can change a lot more easily. A good example of a dynamic website is a blog, where the author, or many authors can wrote and add new posts as often as they wish, and each post is made available on the website.</p>
+
+                <p>Continuing with the blog example, when an author of a posts clicks the "save" button, the content of their post, its title, the date it was written, the name of the author, and likely other pieces of information need to be saved somewhere! The database is where user generated content is saved. The data can be retrieved and shown again quickly when a user requests a certain web page. Some websites only allow a certain group of people save content to the database, where others (such as popular social media websites) will let anyone create an account and start saving content to the database.</p>
+
+                <p>A database is basically a file that keeps the data stored in a structured way. The amount of data stored in the databsae can get to be very large, so it is important to be able to retrieve the requested data very quickly. Imagine how many Tweets have been saved on the website Twitter.com. They are all sitting in a database until they need to be shown.</p>
+
+                {{-- <img class="m-x-auto max-height-300 m-b-30 img img-responsive" src="/svg/undraw_domain_names.svg" alt="choosing a domain name"> --}}
+
+                <p></p>
+            </div>
+        </div>
+
 
 
         <div class="row">

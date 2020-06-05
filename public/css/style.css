@@ -21,6 +21,10 @@ a:hover {
 	color: var(--md-blue);
 }
 
+a.light {
+    color: var(--lt-blue);
+}
+
 a.grow img {
 	transition: all var(--trans-short);
 }
@@ -30,7 +34,7 @@ a.grow img:hover {
 
 p {
 	margin-bottom: 30px;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	font-size: 1.1em;
 }
 
@@ -51,6 +55,10 @@ h1, h2, h3, h4, h5 {
 
 .script {
 	font-family: 'Caveat', sans-serif;
+}
+
+.font-title {
+	font-family: 'Roboto', sans-serif;
 }
 
 pre {
