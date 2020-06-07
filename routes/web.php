@@ -68,10 +68,7 @@ Auth::routes();
 	// Websites
 	Route::group(['prefix' => 'website-development'], function(){
 		Route::get('/', 'WebsiteController@index');
-		Route::get('/how-it-works', 'WebsiteController@how_it_works');
-		// Route::get('/timetracker', 'WebsiteController@timetracker')->name('timetracker');
-		// Route::get('/listings1', 'WebsiteController@listings1')->name('listings1');
-		// Route::get('/home1', 'DesignController@home1')->name('home1');
+		Route::get('/what-is/{topic}', 'WebsiteController@whatIs')->name('what-is');
 	});
 
 	// WIP

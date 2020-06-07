@@ -12,6 +12,9 @@
 
                 <h2>Website Development</h2>
 				<p>From simple single page sites for small businesses to large enterprise software with hundreds of active users, I've worked on projects of all sizes an scopes. I have been building websites and web-based applications for the past 4 years of my career. Whether your goal is selling products online, or sharing your business with the world, I can help. Just <a href="/contact">get in touch</a> and we can discuss your vision!</p>
+				<p>Not sure where to begin? I have created a series of pages to help you understand how websites work and website development is all about.</p>
+				<div><a class="btn btn-default" href="/website-development/what-is/web-browser">How Does It All Work?</a></div>
+
 			</div>
 		</div>
 

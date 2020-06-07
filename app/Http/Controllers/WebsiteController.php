@@ -24,4 +24,29 @@ class WebsiteController extends Controller
 		return view('websites.how_it_works');
 	}
 
+	public function whatIs(string $topic)
+	{
+		$next = [
+			'web-browser' => 'source-code',
+			'source-code' => 'web-server',
+			'web-server' => 'database',
+			'database' => 'domain-name',
+			'domain-name' => 'web-browser',
+		];
+
+		$titles = [
+			'web-browser' => 'What is a Web Browser?',
+			'source-code' => 'What is Source Code?',
+			'web-server' => 'What is a Web Server?',
+			'database' => 'What is a Database?',
+			'domain-name' => 'What is a Domain Name?',
+		];
+
+		return view('websites.what-is.show',[
+			'topic' => $topic,
+			'next_topic' => $next[$topic],
+			'titles' => $titles,
+		]);
+	}
+
 }

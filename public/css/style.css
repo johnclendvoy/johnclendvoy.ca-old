@@ -159,7 +159,8 @@ h2 {
 }
 .btn-default {
 	/*color: var(--lt-green);*/
-	color: var(--md-blue);
+	/* color: var(--md-blue); */
+	color: var(--white);
 	background-color: var(--brand-blue);
 }
 .btn-default:hover {
@@ -303,6 +304,10 @@ a.social-link:hover {
 
 .m-t-0 {
 	margin-top: 0px;
+}
+
+.p-10 {
+	padding: 10px;
 }
 
 .m-t-10 {
